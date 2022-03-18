@@ -494,10 +494,10 @@ id=1, name=Mike
 針對樣式比對的語法，C# 9 增加了關係樣式（relational pattern），讓我們能夠在樣式中使用 `<`、`>`、`<`=、`>=` 等關係運算子。例如：
 
 ~~~~~~~~csharp
-string BmiLevel(decimal bmi) => switch 
+string BmiLevel(decimal bmi) => bmi switch 
 {
     < 18.5m => "太輕",
-    < 25m => "正常"
+    < 25m => "正常",
     < 30m => "過重",
     _ => "肥胖"
 }
