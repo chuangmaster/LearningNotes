@@ -346,7 +346,7 @@ stu2.Id = 2;                  // 更新屬性值
 public class MyClass 
 { 
     public int Id { get; set; }
-    public int Name { get; set; }
+    public string Name { get; set; }
 }
 
 public record Student (int Id, string Name);
